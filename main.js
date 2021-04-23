@@ -11,17 +11,17 @@ fetch (
 
 var searchEl = document.querySelector('#search');
 var citySearch = document.querySelector('#city-search');
-var cityhistory = document.querySelector('#city-history');
+var cityHistory = document.querySelector('#city-history');
 
 searchEl.addEventListener('submit', function (event) {
     event.preventDefault();
 
     if (citySearch.value.length === '') return;
-    cityhistory.innerHTML += '<li>' + citySearch.value + '</li>';
+    cityHistory.innerHTML += '<li>' + citySearch.value + '</li>';
 
     citySearch.value = '';
     
-    localStorage.setItem('citySearch', cityhistory.innerHTML);
+    localStorage.setItem('citySearch', cityHistory.innerHTML);
 }, false);
 
 var saved = localStorage.getItem('citySearch');
