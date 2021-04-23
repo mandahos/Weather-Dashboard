@@ -27,11 +27,19 @@
             <article class="tile is-child">
               <div class="content">
                 <p class="title">Search for a City:</p>
-                <p class="subtitle">
-                    <input type ="text" class="inputCity" placeholder="Current Location">
+                <form id="search" class="box">
+                    <input type ="input" class="inputCity" placeholder="Current Location" id="city-search">
                     <input type ="submit" value="Submit">
                 </p>
                 </div>
+              
+                </form>
+                <div class="field box">
+                <label class="label"></label>
+                <ul id="city-history">
+                    <li aria-placeholder=""></li>
+                </ul>
+            </div>
             </article>
         </div>
 
