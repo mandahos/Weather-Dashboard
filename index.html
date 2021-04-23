@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <script src="https://use.fontawesome.com/ee09231183.js"></script>
+    <script src="https://kit.fontawesome.com/29c8919edd.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section class="hero is-link">
+        <div class="hero-body">
+          <p class="title">
+            Weather Dashboard
+          </p>
+        </div>
+      </section>
+    
+<aside class="city-search">
+    <h2>Search for a City:</h2>
+    <div class="current-location">
+        <input type ="text" class="inputCity" placeholder="Current Location">
+        <input type ="submit" value="Submit">
+    </div>
+</aside>
+<section class="weather-output">
+    
+    <row class="main-tile" id="current-day">
+        <h3>City & Date</h3>
+        <p class="temp">temp</p>
+        <p class="wind">wind</p>
+        <p class="humidity">humidity</p>
+        <p class="UVindex">UV</p>
+
+    </row>
+    <column class="weather-day" id="first-day">
+        <h6 class="date">date</h6>
+        <div class="symbol">symbol</div>
+        <p class="temp">temp</p>
+        <p class="wind">wind</p>
+        <p class="humidity">humidity</p>
+    </column>
+    <column class="weather-day" id="second-day">
+        
+    </column>
+    <column class="weather-day" id="third-day">
+        
+    </column>
+    <column class="weather-day" id="fourth-day">
+        
+    </column>
+    <column class="weather-day" id="fifth-day">
+        
+    </column>
+
+</section>
+    <script src="./main.js"></script>
+</body>
+</html>
+
+
