@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <!--tile title-->
     <section class="hero is-link">
         <div class="hero-body">
           <p class="title">
@@ -20,43 +21,59 @@
           </p>
         </div>
       </section>
-    
-<aside class="city-search">
-    <h2>Search for a City:</h2>
-    <div class="current-location">
-        <input type ="text" class="inputCity" placeholder="Current Location">
-        <input type ="submit" value="Submit">
-    </div>
-</aside>
-<section class="weather-output">
-    
-    <row class="main-tile" id="current-day">
-        <h3>City & Date</h3>
-        <p class="temp">temp</p>
-        <p class="wind">wind</p>
-        <p class="humidity">humidity</p>
-        <p class="UVindex">UV</p>
+    <!--enter city search-->
+    <div class="tile is-ancestor">
+        <div class="tile is-4 is-vertical is-parent">
+            <article class="tile is-child">
+              <div class="content">
+                <p class="title">Search for a City:</p>
+                <p class="subtitle">
+                    <input type ="text" class="inputCity" placeholder="Current Location">
+                    <input type ="submit" value="Submit">
+                </p>
+                </div>
+            </article>
+        </div>
 
-    </row>
-    <column class="weather-day" id="first-day">
-        <h6 class="date">date</h6>
-        <div class="symbol">symbol</div>
-        <p class="temp">temp</p>
-        <p class="wind">wind</p>
-        <p class="humidity">humidity</p>
-    </column>
-    <column class="weather-day" id="second-day">
-        
-    </column>
-    <column class="weather-day" id="third-day">
-        
-    </column>
-    <column class="weather-day" id="fourth-day">
-        
-    </column>
-    <column class="weather-day" id="fifth-day">
-        
-    </column>
+        <!--current day-->
+        <div class="tile is-parent">
+            <article class="tile is-6 is-child ">
+                <p class="title">City</p>
+                <p class="subtitle">Date</p>
+                <p class="temp">temp</p>
+                <p class="wind">wind</p>
+                <p class="humidity">humidity</p>
+                <p class="UVindex">UV</p>
+            </article>
+        </div>      
+    </div>
+   <!--future forecasts--> 
+    <div class="columns">
+        <div class="column">
+          first day
+
+          <h6 class="date">date</h6>
+          <div class="symbol">symbol</div>
+          <p class="temp">temp</p>
+          <p class="wind">wind</p>
+          <p class="humidity">humidity</p>
+        </div>
+        <div class="column">
+          second day
+        </div>
+        <div class="column">
+          third day
+        </div>
+        <div class="column">
+          fourth day
+        </div>
+        <div class="column">
+            fifth day
+          </div>
+      </div>
+
+
+
 
 </section>
     <script src="./main.js"></script>
