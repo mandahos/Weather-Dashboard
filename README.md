@@ -18,5 +18,6 @@ https://mandahos.github.io/Weather-Dashboard/
 ## Contribution
 Made with ❤️ by Amanda
 
-### @2021-Weather-Dashboard!
-[weatherdashboard](https://user-images.githubusercontent.com/73262787/116028644-cfc0ae00-a614-11eb-9a72-7deae29ef0bf.png)
+### @2021-Weather-Dashboard
+
+![weatherdashboard](https://user-images.githubusercontent.com/73262787/116028706-fd0d5c00-a614-11eb-93bd-27414162899b.png)
