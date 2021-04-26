@@ -150,7 +150,7 @@ var displayfiveDay = function(weather){
         //temp
         var forecastTempEl=document.createElement("span");
         forecastTempEl.classList = "card-body text-center";
-        forecastTempEl.textContent = dailyForecast.main.temp + " F ";
+        forecastTempEl.textContent = dailyForecast.main.temp + " F";
         //add temp
         forecastEl.appendChild(forecastTempEl);
         //humidity
@@ -159,7 +159,8 @@ var displayfiveDay = function(weather){
         forecastHumidityEl.textContent = dailyForecast.main.humidity + " %" ;
         //add humidity
         forecastEl.appendChild(forecastHumidityEl);
-    
+        
+        forecastContainerEl.appendChild(forecastEl);
     }
 }
 
