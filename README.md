@@ -13,7 +13,7 @@ A website that allows a user enter a city to get the local weather.
 * font awesome
 
 ## Website
-https://lernantino.github.io/run-buddy/
+https://mandahos.github.io/Weather-Dashboard/
 
 ## Contribution
 Made with ❤️ by Amanda
