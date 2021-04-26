@@ -2,93 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-    <script src="https://use.fontawesome.com/ee09231183.js"></script>
-    <script src="https://kit.fontawesome.com/29c8919edd.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles.css">
+    <title>Weather Dashboard</title>
 </head>
 <body>
-    <!--tile title-->
-    <section class="hero is-link">
-        <div class="hero-body">
-          <p class="title">
-            Weather Dashboard
-          </p>
-        </div>
-      </section>
-    <!--enter city search-->
-    <div class="tile is-ancestor">
-        <div class="tile is-4 is-vertical is-parent">
-            <article class="tile is-child">
-              <div class="content">
-                <p class="title">Search for a City:</p>
-                <form id="search" class="box">
-                    <input type ="input" class="inputCity" placeholder="Current Location" id="city-search">
-                    <input type ="submit" value="Submit">
-                </p>
-                </div>
-              
+    <header class = "">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main class="container-fluid">
+        <div class = "row">
+            <div class="col-12 col-md-3 p-2 search-column">
+                <form class = "border p-2" id = "city-search-form">
+                    <h4>Search for a City</h2>
+                    <input id="city" type = "text" autofocus = "true" class = "form-input"/>
+                    <button class = "btn btn-primary" type = "submit">Search</button>
                 </form>
-                <div class="field box">
-                <label class="label"></label>
-                <ul id="city-history">
-                    <li aria-placeholder=""></li>
-                </ul>
+                <div class = "past-search border" id = "past-search-buttons"></div>
             </div>
-            </article>
+            <div class="col-12 col-md-9">
+                <div class = "row border selected-city" id = "current-forecast">
+                    <div class = "col-12">
+                        <h2 id="searched-city"></h2>
+                        <div id = "current-weather-container" class = "list-group"></div>
+                    </div>  
+                </div>
+                <div class = "row border" id = "five-day-forecast">
+                        <h2 class= "col-12" id = "forecast"></h2>
+                        <div class = "d-flex" id = "fiveday-container"></div>
+                </div>  
+            </div>
         </div>
-
-        <!--current day-->
-        <div class="tile is-parent">
-            <article class="tile is-6 is-child ">
-                <p class="title">City</p>
-                <p class="subtitle">Date</p>
-                <p class="temp">temp</p>
-                <p class="wind">wind</p>
-                <p class="humidity">humidity</p>
-                <p class="UVindex">UV</p>
-            </article>
-        </div>      
-    </div>
-   <!--future forecasts--> 
-    <div class="columns">
-        <div class="column">
-          first day
-
-          <h6 id="date">date</h6>
-          <div class="symbol"></div>
-          <p>Temp:</p>
-          <span id="temp"></p>
-          <p>Wind:</p>
-          <span id="wind"></span>
-          <p>Humidity:</p>
-          <span id="humidity"></span>
-        </div>
-        <div class="column">
-          second day
-        </div>
-        <div class="column">
-          third day
-        </div>
-        <div class="column">
-          fourth day
-        </div>
-        <div class="column">
-            fifth day
-          </div>
-      </div>
-
-
-
-
-</section>
-    <script src="./main.js"></script>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
-
 
