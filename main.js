@@ -11,7 +11,8 @@ var weatherContainerEl=document.querySelector("#current-weather-container");
 var citySearchInputEl = document.querySelector("#searched-city");
 var forecastTitle = document.querySelector("#forecast");
 var forecastContainerEl = document.querySelector("#fiveday-container");
-var pastSearchButtonEl = document.querySelector("#past-search-buttons");
+var SearchButtonEl = document.querySelector("#search-buttons");
+var citySearch = document.querySelector("#city-search")
 //saving searches
 var formSumbitHandler = function(event){
     event.preventDefault();
@@ -168,4 +169,16 @@ cityFormEl.addEventListener("submit", formSumbitHandler);
 
 
 //saves searches to webpage
+cityFormEl.addEventListener('submit', function (event){
+    event.preventDefault();
+    if (cityInputEl.value.length === '') return;
+    citySearch.innerHTML += '<li>' + cityInputEl.value + 
+    '</li>';
+    cityInputEl.value = '';
+    localStorage.setItem('cityInputEl', citySearch.innerHTML);
+}, false);
 
+var saved = localStorage.getItem('cityInputEl');
+if (saved) {
+    citySearch.innerHTML = saved;
+}
